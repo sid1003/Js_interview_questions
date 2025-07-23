@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Propagation Demo</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+
+  <div class="p-8 bg-white rounded-lg shadow-lg space-y-4">
+
+    <!-- Common Event Structure -->
+    <div id="outerDiv" class="p-4 border border-gray-300 bg-gray-50">
+      <form id="form" class="p-4 border border-blue-300 bg-blue-50">
+        <button id="button" type="button" class="px-4 py-2 bg-blue-500 text-white rounded">
+          Click Me
+        </button>
+      </form>
+    </div>
+
+    <!-- Question 5: Event Delegation -->
+    <div class="products flex space-x-4 mt-6">
+      <span class="tv bg-green-200 px-3 py-1 rounded cursor-pointer">TV</span>
+      <span class="phone bg-green-200 px-3 py-1 rounded cursor-pointer">Phone</span>
+      <span class="laptop bg-green-200 px-3 py-1 rounded cursor-pointer">Laptop</span>
+    </div>
+
+    <!-- Question 7: Modal Trigger -->
+    <button class="modalButton mt-6 px-4 py-2 bg-purple-600 text-white rounded">
+      Open Modal
+    </button>
+  </div>
+
+  <!-- Modal -->
+  <div class="modalContainer fixed inset-0 hidden items-center justify-center bg-black bg-opacity-40">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-1/3 text-center">
+      <h2 class="text-xl font-semibold mb-4">Modal Window</h2>
+      <p>Click outside this box to close.</p>
+    </div>
+  </div>
+
+  <!-- JS File -->
+  <script src="script.js"></script>
+</body>
+</html>
