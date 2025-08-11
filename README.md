@@ -1,1 +1,1 @@
-"# Javascript interview questions" 
+# Javascript interview questions
